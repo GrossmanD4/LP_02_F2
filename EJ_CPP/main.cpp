@@ -213,24 +213,28 @@ void menu_Gestor(Coche m){
         cout << "Reingresar modelo: " << endl;
         cin >> modelo;
         M2.modif_marca_modelo(marca,modelo);
+        M2.imprimirInformacion();
     }
 
     if (opc == 2){
         cout << "Reingresar año: " << endl;
         cin >> year;
         M2.modif_year(year);
+        M2.imprimirInformacion();
     }
 
     if (opc == 3){
         cout << "Reingresar color: " << endl;
         cin >> color;
         M2.modif_color(color);
+        M2.imprimirInformacion();
     }
 
     if (opc == 4){
         cout << "Reingresar n_Puertas: " << endl;
         cin >> n_puertas;
         M2.modif_numPuertas(n_puertas);
+        M2.imprimirInformacion();
     }
 
     if (opc == 5){
@@ -245,6 +249,7 @@ void menu_Gestor(Coche m){
         cout << "Reingresar N_puertas:" << endl;
         cin >> n_puertas;
         M2.reingresar_datos(marca,modelo,year,color,n_puertas);
+        M2.imprimirInformacion();
     }
 
     if (opc == 6){
